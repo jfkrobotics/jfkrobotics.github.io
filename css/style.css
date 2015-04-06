@@ -1,7 +1,9 @@
+
+
 body, p {
   padding: 0;
   margin: 0;
-  font-family : 'PT Sans Narrow';
+  font-family : 'Roboto';
   font-weight : 300;
   font-size: 20px;
   line-height: 28px;
@@ -17,12 +19,19 @@ h1 {
 h2 {
   font-size: 30px;
   line-height: 36px;
-  font-family : 'PT Sans Narrow';
+  font-family : 'Roboto';
   font-weight : 300;
 }
 
+h3 {
+  font-size: 15px;
+  line-height: 18px;
+  font-family : 'Roboto';
+  font-weight : 150;
+}
+
 #header {
-  height: 100px;
+  height: 80px;
   width: 100%;
   position: fixed;
   top: 0px;
@@ -37,7 +46,7 @@ h2 {
 
 .logo {
   font-size: 36px;
-  line-height: 100px;
+  line-height: 80px;
   padding:0;
 }
 
@@ -45,7 +54,7 @@ h2 {
   display: block;
   margin-left: 130px;
   text-align: right;
-  margin-top: 20px;
+  margin-top: 25px;
 }
 
 #mainnav { font-size: 0px; }
@@ -262,4 +271,14 @@ h2 {
 
 @media only screen and (min-width:1280px) {
   .centered-wrapper { width: 1250px !important; }
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    height: 45px;
+    background-color: white;
+    width: 100%;
+    text-align: center;
 }
