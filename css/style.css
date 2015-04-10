@@ -88,7 +88,7 @@ h3 {
 .lighter { background-color : #fff; }
 
 #Home { }
-#Blog { background : url(https://raw.githubusercontent.com/jfkrobotics/jfkrobotics.github.io/master/css/Images/pcb_bg.svg) 50% 0 repeat fixed;  }
+#Blog { background : url(https://raw.githubusercontent.com/jfkrobotics/jfkrobotics.github.io/master/css/Images/pcb_bg.png) 50% 0 repeat fixed; }
 
 .centered-wrapper { margin: 0 auto; text-align: center; max-width: 1250px; overflow: hidden; }
 
