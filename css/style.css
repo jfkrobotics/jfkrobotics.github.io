@@ -38,6 +38,8 @@ footer {
 }
 
 
+
+
 #header {
   height: 70px;
   width: 100%;
@@ -59,6 +61,7 @@ footer {
   padding:0;
     font-weight: 800;
 }
+
 
 #navigation {
   display: block;
