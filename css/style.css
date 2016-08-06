@@ -100,9 +100,9 @@ footer {
 .lighter { background-color : #fff; }
 
 #Home {
-  background: -webkit-linear-gradient(-90deg, rgba(237,106,106,0) 0, rgba(0,0,0,1) 100%), url("../css/Images/Banner.jpg") 50% 0 no-repeat fixed;
-  background: -moz-linear-gradient(180deg, rgba(237,106,106,0) 0, rgba(0,0,0,1) 100%), url("../css/Images/Banner.jpg") 50% 0 no-repeat fixed;
-  background: linear-gradient(180deg, rgba(237,106,106,0) 0, rgba(0,0,0,1) 100%), url("../css/Images/Banner.jpg") 50% 0 no-repeat fixed;
+  background: -webkit-linear-gradient(-90deg, rgba(237,106,106,0) 0, rgba(0,0,0,1) 100%), url("../css/Images/Banner.JPG") 50% 0 no-repeat fixed;
+  background: -moz-linear-gradient(180deg, rgba(237,106,106,0) 0, rgba(0,0,0,1) 100%), url("../css/Images/Banner.JPG") 50% 0 no-repeat fixed;
+  background: linear-gradient(180deg, rgba(237,106,106,0) 0, rgba(0,0,0,1) 100%), url("../css/Images/Banner.JPG") 50% 0 no-repeat fixed;
   background-position: 50% 50%;
   -webkit-background-origin: padding-box;
   background-origin: padding-box;
