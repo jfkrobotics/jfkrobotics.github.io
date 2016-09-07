@@ -1,4 +1,101 @@
 <!DOCTYPE html>
+
+<!-- Why in-line: https://developers.google.com/speed/docs/insights/InlineCSS -->
+
+<!-- Libraries etc. -->
+<link href="https://fonts.googleapis.com/css?family=Roboto:400,500" rel="stylesheet"> <!-- Roboto Google Font -->
+
+<!-- End of Libraries -->
+
+<!-- CSS -->
+<style>
+/* Site Header */
+#header-img {
+  /* Gradient Header Thingy... WEEEEEE */
+  background: -webkit-linear-gradient(-90deg, rgba(237,106,106,0) 0, rgba(0,0,0,1) 100%), url("https://raw.githubusercontent.com/jasperdanan/JFKWebsiteResoc/master/Banner.JPG") 50% 0 no-repeat fixed;
+  background: -moz-linear-gradient(180deg, rgba(237,106,106,0) 0, rgba(0,0,0,1) 100%), url("https://raw.githubusercontent.com/jasperdanan/JFKWebsiteResoc/master/Banner.JPG") 50% 0 no-repeat fixed;
+  background: linear-gradient(180deg, rgba(237,106,106,0) 0, rgba(0,0,0,1) 100%), url("https://raw.githubusercontent.com/jasperdanan/JFKWebsiteResoc/master/Banner.JPG") 50% 0 no-repeat fixed;
+  
+  background-position: 50% 50%;
+  
+  -webkit-background-origin: padding-box;
+  background-origin: padding-box;
+  
+  -webkit-background-clip: border-box;
+  background-clip: border-box;
+  
+  -webkit-background-size: cover;
+  background-size: cover;
+
+  overflow: hidden;
+  min-height: 640px;
+  }  
+  
+  
+#header-title {
+   position: relative; 
+   top: 590px; 
+   left: 3px; 
+   width: 100%; 
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  color: white;
+  font-size:350%;
+  overflow: hidden;
+  
+  }
+  /* End of Site Header */
+ 
+  /* Classes for <hr> */
+ .horizontal-gradient {
+    border: 0;
+    height: 0.1em;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+    margin-top: 3em;
+    margin-bottom: 1em;
+  }
+  
+  .verticle-solid {
+  width: 0px;
+  height: 100%;
+  float: left; 
+  border: 1px inset
+  }
+  /* End for <hr> Classes */
+  
+/* Text Classes */
+ p{
+  margin-left: 1em;
+  margin-right: 1em;
+  }
+  
+.text-header {
+  font-family: 'Roboto', sans-serif;
+  font-size: 2.5em;
+   /* Inner Shadow */
+  background-color: #565656;
+  color: transparent;
+  margin-top: 1.5em;
+  text-shadow: 0px 2px 3px rgba(255,255,255,0.5);
+  -webkit-background-clip: text;
+     -moz-background-clip: text;
+          background-clip: text;
+}
+  
+  
+  .text-body{
+   font-family: 'Roboto', sans-serif;
+    font-size: 1.5em;
+    margin-top: 2em;
+  }
+  
+  #footer{
+    margin-top: 3em;
+  }
+/* End of Text Classes */
+  
+</style>
+<!-- End of CSS -->
 <html>
 
 <head>
@@ -7,215 +104,50 @@
 
   <title>JFK Islanders Robotics Club</title>
 
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-
-    <link rel="stylesheet" href="css/style.css">
     <link rel="icon" href="https://raw.githubusercontent.com/jfkrobotics/jfkrobotics.github.io/master/favicon.png" type="image/png">
 </head>
 
+<!-- HTML Body -->
 <body>
+  <div class="container-fluid">
+    <!-- Header -->
+    <div id="header-img">
+    <p id = "header-title">JFKHS ROBOTICS</p>
+    </div>
+    <!-- End of Header -->
 
-<!-- Google Analytics -->
-  <script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+    <hr class="horizontal-gradient"></hr>
+    
 
-  ga('create', 'UA-61797676-1', 'auto');
-  ga('send', 'pageview');
+    <div class="row">
+      
+      <!-- div for Robotics Honors Class -->
+      <div class="col-md-6">
+        <p id="hrclass" class="text-header"> Robotics Honors Class </p>
+        <img class="img-responsive img-thumbnail center-block" src="https://raw.githubusercontent.com/jasperdanan/JFKWebsiteResoc/master/boebot.jpg">
+        <hr class="horizontal-gradient"></hr>
+        <p class="text-body"> JFKHS provides all students with exciting opportunities to engage in STEM-related learning by participating in a well-established robotics program. This year marks the beginning of the sixth year of robotics at JFKHS providing students both a club and a senior-level course to engage all levels in the fun and excitement of robotics.</p>
+        </img> 
+      </div>
+      <!-- End of div for Robotics Honors Class -->
+  
+      <!-- div for Robotics Club -->
+      <div class="col-md-6">
+        <p id="club" class="text-header"> Robotics Club </p>
+        <img class="img-responsive img-thumbnail img-center center-block" src="https://raw.githubusercontent.com/jasperdanan/JFKWebsiteResoc/master/vexbot.jpg">
+        <hr class="horizontal-gradient"></hr>
+         <p class="text-body">  The school has represented Guam the past two years at the VEX Robotics World Championships, and the JFKHS VEX team looks forward to an exciting season this year. </p>
+        </img> 
+    </div>
+    <!-- End of div for Robotics Club -->
+  
+ </div>
+<a href="http://jfkrobotics.github.io/"><p id="footer" class="text-center">Old JFK Robotics Site</p></a>
+</body>
+<!-- End of HTML Body -->
 
+<!-- JS -->
+<script>
+  
 </script>
-
-  <!-- Google Tag Manager -->
-<noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-NHF4DL"
-height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-'//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-NHF4DL');</script>
-<!-- End Google Tag Manager -->
-
-
-  <!-- Google Web Fonts -->
-<link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
-
-<link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
-
-        <!-- Header: begins -->
-        <header id="header">
-
-            <!-- Centered Wrapper: begins -->
-            <div class="centered-wrapper">
-
-                <!-- Logo: begins -->
-                <div id="logo">
-                    <span class="logo">JFKHS Robotics</span>
-                </div>
-                <!-- Logo: ends -->
-
-                <!-- Menu Icon: begins -->
-                <div class="menu-icon"></div>
-                <!-- Menu Icon: ends -->
-
-                <!-- Navigation: begins -->
-                <nav id="navigation">
-
-                    <!-- Main Navigation: begins -->
-                    <ul id="mainnav" class="sf-menu">
-                        <li><a href="#Home"><span>Home</span></a></li>
-                        <li><a href="#Livestream"><span>Tourney</span></a></li>
-                        <li><a href="#Zillian"><span>Social</span></a></li>
-                        <li><a href="#About"><span>About</span></a></li>
-                    </ul>
-                    <!-- Main Navigation: ends -->
-
-                </nav>
-                <!-- Navigation: ends -->
-
-            </div>
-        	<!-- Centered Wrapper: eds -->
-        </header>
-        <!-- Header: ends -->
-
-        <!-- Wrapper: begins -->
-        <div id="wrapper">
-
-<!------------------ Home ------------------>
-
-            <!-- Section: begins -->
-            <section id="Home" class="section darker">
-
-                <!-- Double Space: begins -->
-                <div class="double-space"></div>
-                <!-- Double Space: ends -->
-
-                <!-- Centered Wrapper: begins -->
-                <div class="centered-wrapper">
-
-
-
-
-                </div>
-                <!-- Centered Wrapper: ends -->
-
-                <!-- Double Space: begins -->
-                <div class="double-space"></div>
-                <!-- Double Space: ends -->
-
-            </section>
-            <!-- Section: ends -->
-
-<!------------------ Livestream ------------------>
-
-            <!-- Section: begins -->
-            <section id="Livestream" class="section lighter">
-
-                <!-- Double Space: begins -->
-                <div class="double-space"></div>
-                <!-- Double Space: ends -->
-
-        		<!-- Centered Wrapper: begins -->
-                <div class="centered-wrapper">
-                    <h1>Tourney Brackets</h1>
-
-                        <iframe src="http://challonge.com/JFKRobotComp2015/module" width="100%" height="600" frameborder="0" scrolling="no" allowtransparency="true"></iframe>
-
-                </div>
-                <!-- Centered Wrapper: ends -->
-
-                <!-- Double Space: begins -->
-                <div class="double-space"></div>
-                <!-- Double Space: ends -->
-
-            </section>
-            <!-- Section: ends -->
-
-<!------------------ Social ------------------>
-
-            <!-- Section: begins -->
-            <section id="Zillian" class="section darker">
-
-                <!-- Double Space: begins -->
-                <div class="double-space"></div>
-                <!-- Double Space: ends -->
-
-        		<!-- Centered Wrapper: begins -->
-                <div class="centered-wrapper">
-                    <h1>Social</h1>
-                    <div class="box">
-
-                    <h2>Instagram<p>@JFKHS.8941</p></h2>
-
-                    <br></br>
-                   <!-- SnapWidget -->
-<script src="http://snapwidget.com/js/snapwidget.js"></script>
-<iframe src="http://snapwidget.com/in/?u=amZraHMuODk0MXxpbnw1MHwzfDN8fG5vfDV8ZmFkZU91dHxvblN0YXJ0fHllc3x5ZXM=&ve=150415" title="Instagram Widget" class="snapwidget-widget" allowTransparency="true" frameborder="0" scrolling="no" style="border:none; overflow:hidden; width:100%;"></iframe>
-
-                    <br><br></br>
-
-                   <!--Twitter-->
-                   <h2>Twitter<p>@JFKHS_8941</p></h2>
-                <br></br>
-                   <a class="twitter-timeline" href="https://twitter.com/jfkhs_8941" data-widget-id="674145997027610625">Tweets by @jfkhs_8941</a>
-<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
-                    </div>
-                </div>
-                <!-- Centered Wrapper: ends -->
-
-                <!-- Double Space: begins -->
-                <div class="double-space"></div>
-                <!-- Double Space: ends -->
-
-            </section>
-            <!-- Section: ends -->
-
-<!------------------ About ------------------>
-
-            <!-- Section: begins -->
-            <section id="About" class="section lighter">
-
-                <!-- Double Space: begins -->
-                <div class="double-space"></div>
-                <!-- Double Space: ends -->
-
-        		<!-- Centered Wrapper: begins -->
-                <div class="centered-wrapper">
-                    <h1>About</h1>
-                    <h2>
-                        John F. Kennedy High School Robotics Club | VEX Team #8941
-                    </h2>
-
-                    <p id="aboutBox" class="box">
-                           JFKHS provides all students with exciting opportunities to engage in STEM-related learning by participating in a well-established robotics program. This year marks the beginning of the sixth year of robotics at JFKHS providing students both a club and a senior-level course to engage all levels in the fun and excitement of robotics. The school has represented Guam the past two years at the VEX Robotics World Championships, and the JFKHS VEX team looks forward to an exciting season this year.
-
-
-                </div>
-                <!-- Centered Wrapper: ends -->
-
-                <!-- Double Space: begins -->
-                <div class="double-space"></div>
-                <!-- Double Space: ends -->
-
-            </section>
-            <!-- Section: ends -->
-
-
-        </div>
-        <!-- Wrapper Ends -->
-
-  <script src='http://codepen.io/assets/libs/fullpage/jquery.js'></script>
-
-  <script src="js/index.js"></script>
-
-
-    </body>
-
-<footer>
-<h3>Website Designed by Jasper Danan</h3>
-</footer>
-
-
-</html>
-<!--Commentpush-->
+<!-- End of JS -->
